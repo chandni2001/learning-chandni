@@ -1,0 +1,161 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Menu, .Login, .Container{
+  border: 4px solid blue;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.Menu a {
+  border: 2px solid green;
+  padding: 4px;
+  margin: 5px;
+  text-decoration: none;
+}
+
+.Login {
+  border-color: gray;
+  width: 25%;
+  margin: auto;
+
+}
+
+.Login input {
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid cyan;
+  display: block;
+}
+
+.Myfooter {
+  border: 4px solid rgb(79, 35, 35);
+  box-sizing: 10px;
+  border-radius: 10px;
+}
+
+.myDiv {
+  border: 2px solid rgb(226, 218, 218);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+  background-color: rgb(197, 191, 193);
+}
+
+.AddNumber{
+  border: 2px solid gray;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px;
+
+}
+
+.AddNumber button{
+ margin: 5px;
+ padding: 5px;
+}
+
+.Student {
+  border: 4px solid black;
+  margin: auto;
+  padding: 30px;
+  background-color: aliceblue;
+
+}
+
+.Student button {
+  margin: 5px;
+}
+
+.Student input {
+  margin: 5px;
+}
+
+.App a{
+  /* border: 2px solid black; */
+  margin: 20px;
+  padding: 5px;
+  text-decoration: none;
+  
+}
+
+.App{
+  padding: 4px;
+  margin: 5px;
+  border: 2px solid rgb(89, 80, 80);
+  border-radius: 10px;
+  
+}
+
+.Gender{
+  border: 4px solid black;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  height: 100px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.Gender input, button{
+  margin: 10px;
+}
+
+.FakeStore{
+  border: 4px solid rgb(116, 82, 83);
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+.FakeStore h1 {
+  text-align: center;
+}
+
+.FakeStore img{
+  width: 100px;
+  height: 100px;
+}
+
+
+
+
+
