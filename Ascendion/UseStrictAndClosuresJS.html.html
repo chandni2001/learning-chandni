@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Use strict and closures
+        </title>
+    </head>
+    <body>
+        <button id="clicker">So Clickable</button>
+        <script>
+
+            // using 'use strict'
+            myVariable = 9;
+            console.log(myVariable); // 9
+            function hello() {
+
+            'use strict';
+             var str = 'hello'; 
+
+             console.log(str);
+           }
+           hello();
+
+
+           // java Script closures
+
+           function greet() {
+
+            let name = 'John';
+
+            function displayName() {
+
+            return 'Hi' + ' ' + name;
+            }
+            return displayName;
+            }
+            const g1 = greet();
+            console.log(g1); 
+            console.log(g1()); 
+
+
+            function calculate(x) {
+                function multiply(y) {
+                return x * y;
+                }
+                return multiply;
+            }
+                const multiply3 = calculate(3);
+                const multiply4 = calculate(4);
+                console.log(multiply3); 
+                console.log(multiply3()); 
+                console.log(multiply3(6)); 
+                console.log(multiply4(2)); 
+
+                let a = 0;
+                function sum() {
+                function increaseSum() {
+
+                return a = a + 1;
+                }
+                return increaseSum;
+                }
+                const x = sum();
+                console.log(x()); 
+                console.log(x()); 
+                console.log(x()); 
+                a = a + 1;
+                console.log(a); 
+
+                // higher order function
+                var proveIt = function() {
+                alert("you triggered " + this.id);
+                };
+                document.getElementById("clicker").addEventListener("click", proveIt);
+
+                var hippify = function(text) {
+                return text.replace(/baby boomers/ig, "Aging Hippies");
+                };
+                console.log(hippify("The Baby Boomers just look the other way."));
+
+
+                var attitude = function(original, replacement, source) {
+                return function(source) {
+                return source.replace(original, replacement);
+                };
+                };
+                var snakify = attitude(/millenials/ig, "Snake People");
+                var hippify = attitude(/baby boomers/ig, "Aging Hippies");
+                console.log(snakify("The Millenials are always up to something."));
+                
+                console.log(hippify("The Baby Boomers just look the other way."));
+
+                //closure
+
+                function TicketGenerator(transportMode){
+                    var generateTicket = function(destination){
+                        return transportMode+"--"+destination+"123";
+                    }
+                    return generateTicket;
+                }
+
+                var flightTicketGenerator = TicketGenerator("Flight");
+                var shipTicketGenerator  = TicketGenerator("ship");
+                alert(flightTicketGenerator("chennai"));
+
+
+        </script>
+    </body>
+</html>
