@@ -1,0 +1,12 @@
+<div class="product-list">
+    <h1>Product List</h1>
+    <div class="product-grid">
+      <div *ngFor="let product of products" class="product-card">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.excerpt }}</p>
+        <p><strong>Price:</strong> {{ product.price | currency }}</p>
+        <p><strong>Category:</strong> {{ product.category.name }}</p>
+      </div>
+    </div>
+  </div>
+  
