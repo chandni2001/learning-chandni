@@ -1,4 +1,4 @@
-// src/components/ProductSearch.js
+
 import React, { useState } from 'react';
 import { TextField, Button, Typography, Container, Grid, MenuItem, Box } from '@mui/material';
 import DataTable from 'react-data-table-component';
@@ -37,7 +37,7 @@ function ProductSearch() {
         }
     };
 
-    // Define columns for the DataTable
+    
     const columns = [
         {
             name: 'Name',
