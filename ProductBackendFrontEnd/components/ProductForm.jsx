@@ -1,4 +1,4 @@
-// src/components/ProductForm.js
+
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { TextField, Button, Select, MenuItem, FormControl, InputLabel, Container, Typography, Box } from '@mui/material';
