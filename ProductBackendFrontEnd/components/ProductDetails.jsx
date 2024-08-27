@@ -6,7 +6,7 @@ import api from '../api';
 
 function ProductDetails() {
     const [product, setProduct] = useState(null);
-    const [loading, setLoading] = useState(true); // Added loading state
+    const [loading, setLoading] = useState(true); 
     const { id } = useParams();
 
     useEffect(() => {
@@ -17,7 +17,7 @@ function ProductDetails() {
             } catch (error) {
                 console.error('Error fetching product details:', error);
             } finally {
-                setLoading(false); // Set loading to false when done
+                setLoading(false); 
             }
         }
         fetchProduct();
