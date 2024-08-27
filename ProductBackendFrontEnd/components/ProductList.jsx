@@ -36,19 +36,19 @@ function ProductList() {
             name: 'Name',
             selector: row => row.name,
             sortable: true,
-            width: '25%', // Set a width for the column to prevent it from growing too large
+            width: '25%', 
         },
         {
             name: 'Price',
             selector: row => `$${row.price}`,
             sortable: true,
-            width: '20%', // Set a width for the column
+            width: '20%', 
         },
         {
             name: 'Availability',
             selector: row => row.availability,
             sortable: true,
-            width: '20%', // Set a width for the column
+            width: '20%', 
         },
         {
             name: 'Actions',
@@ -68,7 +68,7 @@ function ProductList() {
             ignoreRowClick: true,
             allowOverflow: true,
             button: true,
-            width: '35%', // Set a width for the actions column
+            width: '35%', 
         },
     ];
 
@@ -92,17 +92,17 @@ function ProductList() {
                         customStyles={{
                             table: {
                                 style: {
-                                    overflowX: 'auto', // Ensure horizontal overflow is handled
+                                    overflowX: 'auto', 
                                 },
                             },
                             headCells: {
                                 style: {
-                                    padding: '12px 8px', // Adjust padding to prevent excessive column width
+                                    padding: '12px 8px', 
                                 },
                             },
                             cells: {
                                 style: {
-                                    padding: '8px', // Adjust cell padding to prevent excessive column width
+                                    padding: '8px', 
                                 },
                             },
                         }}
