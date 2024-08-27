@@ -84,8 +84,8 @@ function ProductForm() {
                         mt: 2, 
                         width: '100%',
                         '&:hover': {
-                            bgcolor: '#000', // Remove hover effect by keeping the background color the same
-                            opacity: 1, // Ensure opacity is consistent
+                            bgcolor: '#000', 
+                            opacity: 1, 
                         },
                     }}
                 >
