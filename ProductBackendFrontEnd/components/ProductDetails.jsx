@@ -1,4 +1,4 @@
-// src/components/ProductDetails.js
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Card, CardContent, Typography, Container, Box, CircularProgress } from '@mui/material';
