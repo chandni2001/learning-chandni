@@ -1,7 +1,7 @@
 const { body, validationResult } = require('express-validator');
 const Product = require('../models/product');
 
-// Create a new product
+
 exports.createProduct = [
     body('name').isLength({ min: 1 }).withMessage('Name is required'),
     body('price').isNumeric().withMessage('Price must be a number'),
@@ -19,13 +19,13 @@ exports.createProduct = [
     }
 ];
 
-// Get all products
+
 exports.getProducts = async function (req, res, next) {
     const results = await Product.find();
     res.json(results);
 };
 
-// Get a single product by ID
+
 exports.getProductById = async function (req, res, next) {
     const product = await Product.findById(req.params.id);
     if (!product) {
@@ -34,7 +34,7 @@ exports.getProductById = async function (req, res, next) {
     res.json(product);
 };
 
-// Delete a product by ID
+
 exports.deleteProduct = async function (req, res, next) {
     const result = await Product.findByIdAndDelete(req.params.id);
     if (!result) {
@@ -43,7 +43,7 @@ exports.deleteProduct = async function (req, res, next) {
     res.json({ message: 'Product deleted' });
 };
 
-// Update a product by ID
+
 exports.updateProduct = async function (req, res, next) {
     const { name, price, availability } = req.body;
     const updateData = {};
@@ -58,7 +58,7 @@ exports.updateProduct = async function (req, res, next) {
     res.json({ message: 'Product updated', product });
 };
 
-// Search products by name
+
 exports.findProductByName = async (req, res) => {
     const { name } = req.params;
     try {
