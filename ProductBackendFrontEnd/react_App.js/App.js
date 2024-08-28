@@ -1,29 +1,4 @@
 
-//todo new api and its front end
-
-// import logo from './logo.svg';
-// import './App.css';
-// import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-// import Todo from './Todo';
-// import TodoDetails from './TodoDetails'
-// import TodoDetailsEdit from './TodoDetailsEdit';
-
-// function App() {
-//   return (
-//       <BrowserRouter>
-//           <Routes>
-//               <Route path="/todo" element={<Todo />} />
-//               <Route path='/todo/:id' element={<TodoDetails />}/>
-//               <Route path='/todo/:id/edit' element={<TodoDetailsEdit />}/>
-//           </Routes>
-//       </BrowserRouter>
-//   );
-// }
-
-// export default App;
-
-
-// product api created and its front end
 
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';

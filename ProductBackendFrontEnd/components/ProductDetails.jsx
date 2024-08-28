@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {
@@ -11,6 +15,7 @@ import {
 import api from '../api';
 
 function ProductDetails() {
+<<<<<<< HEAD
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
@@ -18,6 +23,32 @@ function ProductDetails() {
   useEffect(() => {
     if (id) {
       fetchProductById(id);
+=======
+    const [product, setProduct] = useState(null);
+    const [loading, setLoading] = useState(true); 
+    const { id } = useParams();
+
+    useEffect(() => {
+        async function fetchProduct() {
+            try {
+                const response = await api.get(`/products/${id}`);
+                setProduct(response.data);
+            } catch (error) {
+                console.error('Error fetching product details:', error);
+            } finally {
+                setLoading(false); 
+            }
+        }
+        fetchProduct();
+    }, [id]);
+
+    if (loading) {
+        return (
+            <Container maxWidth="sm" sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <CircularProgress />
+            </Container>
+        );
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
     }
   }, [id]);
 

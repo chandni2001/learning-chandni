@@ -1,6 +1,10 @@
 const { body, validationResult } = require('express-validator');
 const Product = require('../models/product');
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 exports.createProduct = [
   body('name')
     .isLength({ min: 1 })
@@ -28,8 +32,13 @@ exports.createProduct = [
   }
 ];
 
+<<<<<<< HEAD
 exports.getProducts = async (req, res, next) => {
   try {
+=======
+
+exports.getProducts = async function (req, res, next) {
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
     const results = await Product.find();
     res.json(results);
   } catch (err) {
@@ -37,8 +46,13 @@ exports.getProducts = async (req, res, next) => {
   }
 };
 
+<<<<<<< HEAD
 exports.getProductById = async (req, res, next) => {
   try {
+=======
+
+exports.getProductById = async function (req, res, next) {
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
     const product = await Product.findById(req.params.id);
     if (!product) {
       return res.status(404).json({ message: 'Product not found' });
@@ -49,8 +63,13 @@ exports.getProductById = async (req, res, next) => {
   }
 };
 
+<<<<<<< HEAD
 exports.deleteProduct = async (req, res, next) => {
   try {
+=======
+
+exports.deleteProduct = async function (req, res, next) {
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
     const result = await Product.findByIdAndDelete(req.params.id);
     if (!result) {
       return res.status(404).json({ message: 'Product not found' });
@@ -61,12 +80,22 @@ exports.deleteProduct = async (req, res, next) => {
   }
 };
 
+<<<<<<< HEAD
 exports.updateProduct = async (req, res, next) => {
   const { name, price, availability } = req.body;
   const updateData = {};
   if (name) updateData.name = name;
   if (price) updateData.price = price;
   if (availability) updateData.availability = availability;
+=======
+
+exports.updateProduct = async function (req, res, next) {
+    const { name, price, availability } = req.body;
+    const updateData = {};
+    if (name) updateData.name = name;
+    if (price) updateData.price = price;
+    if (availability) updateData.availability = availability;
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 
   try {
     const product = await Product.findByIdAndUpdate(req.params.id, updateData, { new: true });
@@ -79,6 +108,10 @@ exports.updateProduct = async (req, res, next) => {
   }
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 exports.findProductByName = async (req, res) => {
   const { name } = req.params;
   try {

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 import React, { useState } from 'react';
 import {
   TextField,
@@ -44,6 +48,7 @@ function ProductSearch() {
     }
   };
 
+<<<<<<< HEAD
   const columns = [
     {
       name: 'Name',
@@ -61,6 +66,26 @@ function ProductSearch() {
       sortable: true,
     },
   ];
+=======
+    
+    const columns = [
+        {
+            name: 'Name',
+            selector: row => row.name,
+            sortable: true,
+        },
+        {
+            name: 'Price',
+            selector: row => `$${row.price}`,
+            sortable: true,
+        },
+        {
+            name: 'Availability',
+            selector: row => row.availability,
+            sortable: true,
+        },
+    ];
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 
   return (
     <Container maxWidth="lg" sx={{ mt: 4 }}>

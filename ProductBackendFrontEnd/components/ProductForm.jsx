@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import {
@@ -37,6 +41,7 @@ function ProductForm() {
     }
   };
 
+<<<<<<< HEAD
   const handleSubmit = async (e) => {
     e.preventDefault();
     const product = { name, price, availability };
@@ -105,6 +110,60 @@ function ProductForm() {
       </form>
     </Container>
   );
+=======
+    return (
+        <Container maxWidth="sm" sx={{ mt: 4 }}>
+            <Box textAlign="center" mb={4}>
+                <Typography variant="h4">
+                    {id ? 'Edit Product' : 'Add Product'}
+                </Typography>
+            </Box>
+            <form onSubmit={handleSubmit}>
+                <TextField
+                    label="Name"
+                    fullWidth
+                    margin="normal"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                />
+                <TextField
+                    label="Price"
+                    type="number"
+                    fullWidth
+                    margin="normal"
+                    value={price}
+                    onChange={(e) => setPrice(e.target.value)}
+                />
+                <FormControl fullWidth margin="normal">
+                    <InputLabel>Availability</InputLabel>
+                    <Select
+                        value={availability}
+                        onChange={(e) => setAvailability(e.target.value)}
+                    >
+                        <MenuItem value="available">Available</MenuItem>
+                        <MenuItem value="not available">Not Available</MenuItem>
+                    </Select>
+                </FormControl>
+                <Button
+                    type="submit"
+                    variant="contained"
+                    sx={{ 
+                        bgcolor: '#000', 
+                        color: '#fff', 
+                        mt: 2, 
+                        width: '100%',
+                        '&:hover': {
+                            bgcolor: '#000', 
+                            opacity: 1, 
+                        },
+                    }}
+                >
+                    add Product
+                </Button>
+            </form>
+        </Container>
+    );
+>>>>>>> a5cfd934de70fba2d5d8f9fa9a956f5f21289cd4
 }
 
 export default ProductForm;
