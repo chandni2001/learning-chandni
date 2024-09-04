@@ -1,0 +1,36 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container styling */
+.param-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Title styling */
+.param-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Text styling */
+.param-text {
+  font-size: 1.25rem;
+  color: #555;
+}
+
+/* ID styling */
+.param-id {
+  font-weight: bold;
+  color: #007bff;
+}

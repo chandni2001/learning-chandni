@@ -1,0 +1,72 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Keep the light background for the body */
+  color: #333; /* Dark text color for readability */
+}
+
+/* Navigation styling */
+nav {
+  background-color: #000000; /* Black background for navigation */
+  padding: 10px;
+  border-bottom: 2px solid #333333; /* Dark gray border for emphasis */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: #f4f4f4; /* Light text color for links */
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #333333; /* Dark gray background for hover state */
+  color: #f4f4f4;
+}
+
+nav a.active {
+  font-weight: bold;
+  background-color: #333333; /* Dark gray background for active state */
+  color: #f4f4f4;
+}
+
+/* Main content styling */
+.main-content {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff; /* White background for content */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for content */
+}
+
+/* Heading styling */
+h1, h2 {
+  color: #333; /* Dark text color for headings */
+}
+
+/* Accessible focus styling */
+a:focus {
+  outline: 3px solid #007bff; /* Blue outline for focus states */
+  outline-offset: 2px;
+}
