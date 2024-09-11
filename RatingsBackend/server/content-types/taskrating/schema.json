@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "taskratings",
+  "info": {
+    "singularName": "taskrating",
+    "pluralName": "taskratings",
+    "displayName": "TaskRating",
+    "description": "Associates tasks with reviews."
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "task": {
+      "type": "relation",
+      "relation": "manyToOne", 
+      "target": "plugin::ratings.task",
+      "required": true
+    },
+    "review": {
+      "type": "relation",
+      "relation": "oneToOne",  
+      "target": "plugin::ratings.review",
+      "required": true,
+      "unique": true
+    }
+  }
+}
