@@ -1,0 +1,80 @@
+/* Task.css */
+
+/* Container for the task items */
+.task-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the task items */
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Section for rating and comment */
+.rating-section {
+  margin-top: 16px;
+}
+
+/* Rating icons */
+.rating-icons {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.rating-icon {
+  font-size: 24px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+.rating-icon.active {
+  color: #f39c12;
+}
+
+/* Textarea for comments */
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #f39c12;
+  box-shadow: 0 0 4px rgba(243, 156, 18, 0.5);
+}
+
+/* Submit button */
+button {
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e67e22;
+  transform: scale(1.05);
+}
+
+/* Message */
+.message {
+  color: #2ecc71;
+  font-weight: bold;
+  margin-top: 16px;
+}
