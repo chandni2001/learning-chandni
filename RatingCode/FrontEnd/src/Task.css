@@ -1,0 +1,156 @@
+/* Task.css */
+
+/* General styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #dcdde1 !important; /* Light background color */
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Task item styling */
+.task-item {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Task info */
+.task-item p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.task-item strong {
+  font-weight: bold;
+  color: #555;
+}
+
+/* Review section */
+.reviews-section {
+  margin-top: 20px;
+}
+
+.review-item {
+  background-color: #f9f9f9;
+  border-left: 4px solid #2196f3;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.review-item.user-review {
+  border-left-color: #4caf50;
+  background-color: #e8f5e9; /* Light green background for user's review */
+}
+
+/* Rating section */
+.rating-section {
+  margin-top: 15px;
+}
+
+.rating-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.rating-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.rating-icon.active {
+  color: #ff9800;
+}
+
+.rating-icon:hover {
+  color: #ff5722;
+}
+
+/* Textarea and button for submitting review */
+textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+  background-color: #f1f1f1; /* Light grey background for textarea */
+}
+
+textarea:focus {
+  border-color: #2196f3;
+  outline: none;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1976d2;
+}
+
+/* Success message */
+.message {
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 10px;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .task-item {
+    width: 95%;
+  }
+
+  button {
+    width: 100%;
+    text-align: center;
+  }
+
+  textarea {
+    width: 100%;
+  }
+}

@@ -1,0 +1,116 @@
+/* Container for the Assign Task component */
+.assign-task-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading for the form */
+  .assign-task-container h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  
+  /* Container for the form elements */
+  .form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Each form group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Labels for the input fields */
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 8px;
+  }
+  
+  /* Input fields */
+  .form-group input[type="text"],
+  .form-group input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Button to assign task */
+  .assign-task-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the button */
+  .assign-task-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Alert messages */
+  .alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .alert.success {
+    background-color: #4CAF50;
+  }
+  
+  .alert.error {
+    background-color: #f44336;
+  }
+  
+  /* Close button for alerts */
+  .close-alert {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Back to home button */
+  .back-button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect for the back button */
+  .back-button:hover {
+    background-color: #444444;
+  }
+  
