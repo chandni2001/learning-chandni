@@ -1,0 +1,49 @@
+.pink, .blue, .orange, .purple, .green {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.pink {
+  background-color: pink;
+  left: 100px;
+  top: 100px;
+  z-index: 1;
+}
+
+.orange {
+  background-color: orange;
+  left: 20px;
+  top: 20px;
+  z-index: 3;
+}
+
+.blue {
+  background-color: blue;
+  left: 250px;
+  top: 150px;
+  z-index: 2;
+}
+
+.purple {
+  background-color: purple;
+  left: 400px;
+  top: 200px;
+  z-index: 0;
+}
+
+.green {
+  background-color: green;
+  left: 550px;
+  top: 250px;
+  z-index: 100;
+}
+
+.pink {
+  filter: hue-rotate(20deg);
+}

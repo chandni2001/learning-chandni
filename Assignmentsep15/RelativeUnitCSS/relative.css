@@ -1,0 +1,36 @@
+.wrapper {
+  width: 90%;
+  max-width: 940px;
+}
+
+.wrapper .inner {
+  width: 50%;
+}
+
+li:nth-of-type(even) {
+  background: lightslategrey;
+}
+
+li:nth-child(5) {
+  color: green;
+}
+
+li:nth-child(n+6) {
+  color: green;
+}
+
+li:nth-child(-n+5) {
+  color: green;
+}
+
+li:nth-of-type(odd) {
+  background: whitesmoke;
+}
+
+li:last-child {
+  color: green;
+}
+
+li:nth-last-child(2) {
+  color: green;
+}
