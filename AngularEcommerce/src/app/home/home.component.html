@@ -1,0 +1,15 @@
+<div class="course-container">
+    <div *ngFor="let course of courses" class="course-box">
+      <img [src]="course.image" alt="{{course.name}}" class="course-image" />
+      <h2 class="course-title">{{ course.name }}</h2>
+      <div class="course-description" [innerHTML]="course.description"></div>
+      <p class="course-category">Category: {{ course.category_name }}</p>
+      <p class="course-price">Price: ₹{{ course.price }}</p>
+      <p class="course-credit">Credit Cost: {{ course.credit_cost }}</p>
+      <p class="course-status">Status: {{ course.active ? 'Active' : 'Inactive' }}</p>
+      <p class="course-finished">Finished: {{ course.finished ? 'Yes' : 'No' }}</p>
+      <p class="course-created">Created At: {{ course.created_at | date }}</p>
+      <p class="course-updated">Updated At: {{ course.updated_at | date }}</p>
+    </div>
+  </div>
+  

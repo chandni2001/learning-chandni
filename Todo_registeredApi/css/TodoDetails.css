@@ -1,0 +1,43 @@
+/* Container styling for the todo details */
+.todo-details-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each detail entry */
+.todo-details-container div {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Styling for the title and other details */
+.todo-details-container div:first-of-type {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Link styling */
+.todo-details-container a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.todo-details-container a:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

@@ -1,0 +1,13 @@
+<nav>
+    
+    <button (click)="toggleMenu()">Menu</button>
+  
+    <div *ngIf="showMenu" class="menu">
+      <ul>
+        <li *ngFor="let item of items">
+          <a [routerLink]="item.path">{{ item.title }}</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
